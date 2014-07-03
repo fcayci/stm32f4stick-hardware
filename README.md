@@ -31,25 +31,25 @@ Current Version Features:
 
 ##### Pinout:
 
-| Pin # | Pin Name | Functionality
-|-:|-----:|-------
-| 5  | PH0-OSC_IN | RCC_OSC_IN
-| 6  | PH1-OSC_OUT | RCC_OSC_OUT
-| 14 | PA0-WKUP | LED1
-| 15 | PA1 | LED2
-| 20 | PA4 | SPI1_NSS (SD Card)
-| 21 | PA5 | SPI1_SCK (SD Card)
-| 22 | PA6 | SPI1_MISO (SD Card)
-| 23 | PA7 | SPI1_MOSI (SD Card)
-| 28 | PB2 | BUTTON
-| 33 | PB12 | SPI2_NSS (nRF24L01+)
-| 34 | PB13 | SPI2_SCK (nRF24L01+)
-| 35 | PB14 | SPI2_MISO (nRF24L01+)
-| 36 | PB15 | SPI2_MOSI (nRF24L01+)
-| 37 | PC6 | CE (nRF24L01+)
-| 42 | PA9 | USB_OTG_FS_VBUS
-| 44 | PA11 | USB_OTG_FS_DM
-| 45 | PA12 | USB_OTG_FS_DP
+ Pin # | Pin Name | Functionality
+------:|-----:|-------
+ 5  | PH0-OSC_IN | RCC_OSC_IN
+ 6  | PH1-OSC_OUT | RCC_OSC_OUT
+ 14 | PA0-WKUP | LED1
+ 15 | PA1 | LED2
+ 20 | PA4 | SPI1_NSS (SD Card)
+ 21 | PA5 | SPI1_SCK (SD Card)
+ 22 | PA6 | SPI1_MISO (SD Card)
+ 23 | PA7 | SPI1_MOSI (SD Card)
+ 28 | PB2 | BUTTON
+ 33 | PB12 | SPI2_NSS (nRF24L01+)
+ 34 | PB13 | SPI2_SCK (nRF24L01+)
+ 35 | PB14 | SPI2_MISO (nRF24L01+)
+ 36 | PB15 | SPI2_MOSI (nRF24L01+)
+ 37 | PC6 | CE (nRF24L01+)
+ 42 | PA9 | USB_OTG_FS_VBUS
+ 44 | PA11 | USB_OTG_FS_DM
+ 45 | PA12 | USB_OTG_FS_DP
 
 ### Version 1
 ---
@@ -67,20 +67,20 @@ Current Version Features:
 
 ##### Pinout:
 
-| Pin # | Pin Name | Functionality
-|-:|-----:|-------
-| 5  | PH0-OSC_IN | RCC_OSC_IN
-| 6  | PH1-OSC_OUT | RCC_OSC_OUT
-| 14 | PA0-WKUP | LED1
-| 15 | PA1 | LED2
-| 20 | PA4 | SPI1_NSS (SD Card)
-| 21 | PA5 | SPI1_SCK (SD Card)
-| 22 | PA6 | SPI1_MISO (SD Card)
-| 23 | PA7 | SPI1_MOSI (SD Card)
-| 28 | PB2 | BUTTON
-| 42 | PA9 | USB_OTG_FS_VBUS
-| 44 | PA11 | USB_OTG_FS_DM
-| 45 | PA12 | USB_OTG_FS_DP
+ Pin # | Pin Name | Functionality
+-----:|-----:|-------
+ 5  | PH0-OSC_IN | RCC_OSC_IN
+ 6  | PH1-OSC_OUT | RCC_OSC_OUT
+ 14 | PA0-WKUP | LED1
+ 15 | PA1 | LED2
+ 20 | PA4 | SPI1_NSS (SD Card)
+ 21 | PA5 | SPI1_SCK (SD Card)
+ 22 | PA6 | SPI1_MISO (SD Card)
+ 23 | PA7 | SPI1_MOSI (SD Card)
+ 28 | PB2 | BUTTON
+ 42 | PA9 | USB_OTG_FS_VBUS
+ 44 | PA11 | USB_OTG_FS_DM
+ 45 | PA12 | USB_OTG_FS_DP
 
 ## Future change notes
 
