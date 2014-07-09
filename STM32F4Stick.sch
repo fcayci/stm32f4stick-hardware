@@ -4951,6 +4951,26 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </device>
 </devices>
 </deviceset>
+<deviceset name="4.7UF-6.3V-10%(0603)" prefix="C" uservalue="yes">
+<description>CAP-08280</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="0603" package="0603-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08280"/>
+<attribute name="VALUE" value="4.7uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-Connectors">
@@ -9296,8 +9316,8 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="12PF-50V-5%(0603)" device="" value="12pF"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="12PF-50V-5%(0603)" device="" value="12pF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="12PF-50V-5%(0603)" device="" value="20pF"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="12PF-50V-5%(0603)" device="" value="20pF"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP_POL" device="1206" value="2.2uF"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -9338,19 +9358,21 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <part name="C12" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C17" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="170.18" y="127" size="1.778" layer="150">Decoupling capacitors
-for the STM32F405 chip
+for the STM32F4 chip
 Place one cap per VDD pin</text>
 <text x="365.76" y="264.16" size="1.778" layer="150">Short SJ1 to put the chip into
 bootloader mode when powered on</text>
 <text x="22.86" y="170.18" size="1.778" layer="150">5V to 3.3V Voltage regulator (LDO)</text>
 <text x="10.16" y="88.9" size="1.778" layer="150">Extra connection headers</text>
 <text x="355.6" y="7.62" size="5.08" layer="150">Furkan Cayci</text>
-<text x="426.72" y="7.62" size="5.08" layer="150">B</text>
+<text x="426.72" y="7.62" size="5.08" layer="150">C</text>
 <text x="22.86" y="261.62" size="1.778" layer="150">USB can be used for programming through bootloader
 It requires an external oscillator to be hooked up</text>
 <text x="365.76" y="175.26" size="1.778" layer="150">GPIO</text>
@@ -9368,17 +9390,26 @@ PC11 (P52) is pulled high</text>
 Put a jumper between pins 2-3 for USB power</text>
 <text x="175.26" y="86.36" size="1.778" layer="150">nrf24l01+ 2.4GHz radio connector
 Added two decoupling capacitors</text>
+<wire x1="124.46" y1="170.18" x2="142.24" y2="170.18" width="0.2032" layer="150"/>
+<wire x1="142.24" y1="170.18" x2="142.24" y2="142.24" width="0.2032" layer="150"/>
+<wire x1="142.24" y1="142.24" x2="124.46" y2="142.24" width="0.2032" layer="150"/>
+<wire x1="124.46" y1="170.18" x2="124.46" y2="142.24" width="0.2032" layer="150"/>
+<text x="99.06" y="172.72" size="1.778" layer="150">For STM32F401 compatibility,
+C5 should be 0 ohm resistor
+For STM32F405, don't fit C17</text>
+<text x="243.84" y="200.66" size="1.778" layer="150">For STM32F401 compatibility,
+C15 should be 0 ohm resistor</text>
 </plain>
 <instances>
 <instance part="-2" gate="G$1" x="187.96" y="200.66"/>
-<instance part="C5" gate="G$1" x="142.24" y="157.48"/>
+<instance part="C5" gate="G$1" x="137.16" y="157.48"/>
 <instance part="C15" gate="G$1" x="248.92" y="193.04"/>
 <instance part="GND13" gate="1" x="248.92" y="185.42"/>
 <instance part="C16" gate="G$1" x="375.92" y="220.98"/>
 <instance part="GND15" gate="1" x="375.92" y="213.36"/>
 <instance part="R8" gate="G$1" x="375.92" y="246.38" rot="R90"/>
 <instance part="GND14" gate="1" x="375.92" y="236.22"/>
-<instance part="GND10" gate="1" x="142.24" y="149.86"/>
+<instance part="GND10" gate="1" x="137.16" y="147.32"/>
 <instance part="SUPPLY9" gate="G$1" x="391.16" y="256.54"/>
 <instance part="JP1" gate="G$1" x="10.16" y="60.96" rot="MR180"/>
 <instance part="S1" gate="G$1" x="383.54" y="228.6" smashed="yes">
@@ -9404,7 +9435,7 @@ Added two decoupling capacitors</text>
 <instance part="GND12" gate="1" x="213.36" y="104.14"/>
 <instance part="SUPPLY3" gate="G$1" x="162.56" y="124.46"/>
 <instance part="GND9" gate="1" x="132.08" y="208.28"/>
-<instance part="C6" gate="G$1" x="144.78" y="218.44"/>
+<instance part="C6" gate="G$1" x="142.24" y="218.44"/>
 <instance part="C4" gate="G$1" x="119.38" y="218.44"/>
 <instance part="C3" gate="G$1" x="81.28" y="152.4"/>
 <instance part="GND6" gate="1" x="81.28" y="132.08"/>
@@ -9450,6 +9481,8 @@ Added two decoupling capacitors</text>
 <instance part="C12" gate="G$1" x="193.04" y="40.64"/>
 <instance part="SUPPLY4" gate="G$1" x="182.88" y="50.8"/>
 <instance part="GND11" gate="1" x="193.04" y="30.48"/>
+<instance part="GND19" gate="1" x="129.54" y="147.32"/>
+<instance part="C17" gate="G$1" x="129.54" y="157.48"/>
 </instances>
 <busses>
 </busses>
@@ -9621,7 +9654,7 @@ Added two decoupling capacitors</text>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="142.24" y1="152.4" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="149.86" x2="137.16" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="2"/>
@@ -9679,8 +9712,8 @@ Added two decoupling capacitors</text>
 <wire x1="119.38" y1="213.36" x2="127" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="127" y1="213.36" x2="132.08" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="215.9" x2="144.78" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="213.36" x2="137.16" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="215.9" x2="142.24" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="213.36" x2="137.16" y2="213.36" width="0.1524" layer="91"/>
 <junction x="132.08" y="213.36"/>
 <pinref part="Q1" gate="G$1" pin="G2"/>
 <wire x1="137.16" y1="213.36" x2="132.08" y2="213.36" width="0.1524" layer="91"/>
@@ -9785,6 +9818,11 @@ Added two decoupling capacitors</text>
 <wire x1="193.04" y1="33.02" x2="193.04" y2="35.56" width="0.1524" layer="91"/>
 <junction x="193.04" y="35.56"/>
 </segment>
+<segment>
+<pinref part="GND19" gate="1" pin="GND"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="154.94" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -9881,20 +9919,20 @@ Added two decoupling capacitors</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="-2" gate="G$1" pin="PH1"/>
-<wire x1="160.02" y1="228.6" x2="144.78" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="228.6" x2="144.78" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="228.6" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="228.6" x2="142.24" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="X2"/>
-<wire x1="137.16" y1="226.06" x2="144.78" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="226.06" x2="144.78" y2="223.52" width="0.1524" layer="91"/>
-<junction x="144.78" y="226.06"/>
+<wire x1="137.16" y1="226.06" x2="142.24" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="226.06" x2="142.24" y2="223.52" width="0.1524" layer="91"/>
+<junction x="142.24" y="226.06"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="-2" gate="G$1" pin="VCAP1"/>
-<wire x1="160.02" y1="165.1" x2="142.24" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="165.1" x2="142.24" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="165.1" x2="137.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="165.1" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -10305,6 +10343,9 @@ Added two decoupling capacitors</text>
 <pinref part="-2" gate="G$1" pin="PB11"/>
 <wire x1="160.02" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="91"/>
 <label x="144.78" y="167.64" size="1.778" layer="95"/>
+<wire x1="144.78" y1="167.64" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="167.64" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="284.48" y1="213.36" x2="297.18" y2="213.36" width="0.1524" layer="91"/>
