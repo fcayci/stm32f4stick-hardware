@@ -6959,8 +6959,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 <device name="SMD-3" package="TACTILE_SWITCH_SMD-3">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="4"/>
+<connect gate="G$1" pin="1" pad="1 3"/>
+<connect gate="G$1" pin="2" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7591,7 +7591,6 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <part name="R4" library="SparkFun-Resistors" deviceset="100KOHM1/10W1%(0603)" device="" value="100k"/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM1/10W1%(0603)" device="" value="100k"/>
-<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="100KOHM1/10W1%(0603)" device="" value="100k"/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R6" library="SparkFun-Resistors" deviceset="100KOHM1/10W1%(0603)" device="" value="100k"/>
@@ -7600,6 +7599,7 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7623,11 +7623,17 @@ in SPI Mode</text>
 <text x="284.48" y="261.62" size="1.778" layer="150">PA10, PB5, PB11, PC11 needs stable
 levels for USB bootloader
 PA10 (USB_ID) is pulled high
-PB11 (P30) is pulled high
+PB11 (P30) is pulled low
 PB5 (P57) is pulled high
 PC11 (P52) is pulled high</text>
 <text x="22.86" y="203.2" size="1.778" layer="150">External power / USB Power select
 Put a jumper between pins 2-3 for USB power</text>
+<text x="284.48" y="200.66" size="1.778" layer="150">For STM32F401 support
+R5 should be 4.7uF Cap</text>
+<text x="99.06" y="167.64" size="1.778" layer="150">For STM32F401 support
+C5 should be 0 ohm resistor</text>
+<text x="246.38" y="175.26" size="1.778" layer="150">For STM32F401 support
+C13 should be 0 ohm resistor</text>
 </plain>
 <instances>
 <instance part="-2" gate="G$1" x="187.96" y="200.66"/>
@@ -7696,8 +7702,7 @@ Put a jumper between pins 2-3 for USB power</text>
 <instance part="SUPPLY2" gate="G$1" x="129.54" y="86.36"/>
 <instance part="R4" gate="G$1" x="297.18" y="243.84" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="297.18" y="251.46"/>
-<instance part="R5" gate="G$1" x="297.18" y="220.98" rot="R90"/>
-<instance part="SUPPLY5" gate="G$1" x="297.18" y="228.6"/>
+<instance part="R5" gate="G$1" x="297.18" y="220.98" rot="R270"/>
 <instance part="R7" gate="G$1" x="320.04" y="220.98" rot="R90"/>
 <instance part="SUPPLY7" gate="G$1" x="320.04" y="228.6"/>
 <instance part="R6" gate="G$1" x="320.04" y="243.84" rot="R90"/>
@@ -7706,6 +7711,7 @@ Put a jumper between pins 2-3 for USB power</text>
 <instance part="LOGO1" gate="G$1" x="316.462425" y="11.917225"/>
 <instance part="C15" gate="G$1" x="63.5" y="142.24"/>
 <instance part="GND18" gate="1" x="63.5" y="132.08"/>
+<instance part="GND19" gate="1" x="297.18" y="210.82"/>
 </instances>
 <busses>
 </busses>
@@ -7811,11 +7817,6 @@ Put a jumper between pins 2-3 for USB power</text>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="248.92" x2="297.18" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="228.6" x2="297.18" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
@@ -8015,6 +8016,11 @@ Put a jumper between pins 2-3 for USB power</text>
 <pinref part="C15" gate="G$1" pin="2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="63.5" y1="139.7" x2="63.5" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="297.18" y1="215.9" x2="297.18" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -8543,10 +8549,10 @@ Put a jumper between pins 2-3 for USB power</text>
 <label x="50.8" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="284.48" y1="213.36" x2="297.18" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="213.36" x2="297.18" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="228.6" x2="297.18" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="228.6" x2="297.18" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<label x="284.48" y="213.36" size="1.778" layer="95"/>
+<label x="284.48" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P33" class="0">
