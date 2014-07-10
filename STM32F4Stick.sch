@@ -8713,8 +8713,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 <device name="SMD-3" package="TACTILE_SWITCH_SMD-3">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="4"/>
+<connect gate="G$1" pin="1" pad="1 3"/>
+<connect gate="G$1" pin="2" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9372,7 +9372,7 @@ bootloader mode when powered on</text>
 <text x="22.86" y="170.18" size="1.778" layer="150">5V to 3.3V Voltage regulator (LDO)</text>
 <text x="10.16" y="88.9" size="1.778" layer="150">Extra connection headers</text>
 <text x="355.6" y="7.62" size="5.08" layer="150">Furkan Cayci</text>
-<text x="426.72" y="7.62" size="5.08" layer="150">C</text>
+<text x="426.72" y="7.62" size="5.08" layer="150">B</text>
 <text x="22.86" y="261.62" size="1.778" layer="150">USB can be used for programming through bootloader
 It requires an external oscillator to be hooked up</text>
 <text x="365.76" y="175.26" size="1.778" layer="150">GPIO</text>
@@ -9399,6 +9399,7 @@ C5 should be 0 ohm resistor
 For STM32F405, don't fit C17</text>
 <text x="243.84" y="200.66" size="1.778" layer="150">For STM32F401 compatibility,
 C15 should be 0 ohm resistor</text>
+<text x="398.78" y="17.78" size="3.81" layer="150">Version 2</text>
 </plain>
 <instances>
 <instance part="-2" gate="G$1" x="187.96" y="200.66"/>

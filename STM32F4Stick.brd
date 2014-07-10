@@ -22,7 +22,7 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -207,7 +207,7 @@
 <text x="33.274" y="6.858" size="0.8128" layer="21" ratio="15">STM32F4Stick</text>
 <text x="33.274" y="5.842" size="0.6096" layer="21" ratio="15">FURKAN CAYCI</text>
 <text x="33.274" y="5.08" size="0.4064" layer="21" ratio="15">JUNE 2014</text>
-<text x="37.846" y="5.08" size="0.4064" layer="21" ratio="15">REV B</text>
+<text x="37.592" y="5.08" size="0.4064" layer="21" ratio="15">V2 REV B</text>
 <wire x1="12.446" y1="9.652" x2="17.526" y2="9.652" width="0.2032" layer="21"/>
 <wire x1="17.526" y1="9.652" x2="17.526" y2="7.112" width="0.2032" layer="21"/>
 <wire x1="17.526" y1="7.112" x2="12.446" y2="7.112" width="0.2032" layer="21"/>
@@ -251,6 +251,24 @@ CE - PC6 (Face out)</text>
 <wire x1="26.162" y1="5.588" x2="24.892" y2="5.588" width="0.2032" layer="21"/>
 <wire x1="24.892" y1="5.588" x2="24.892" y2="4.572" width="0.2032" layer="21"/>
 <wire x1="24.892" y1="4.572" x2="26.162" y2="4.572" width="0.2032" layer="21"/>
+<wire x1="22.098" y1="22.86" x2="22.098" y2="25.146" width="0.2032" layer="22"/>
+<wire x1="22.098" y1="25.146" x2="30.48" y2="25.146" width="0.2032" layer="22"/>
+<wire x1="30.48" y1="25.146" x2="30.48" y2="22.86" width="0.2032" layer="22"/>
+<wire x1="30.48" y1="22.86" x2="22.098" y2="22.86" width="0.2032" layer="22"/>
+<text x="29.972" y="23.368" size="0.3048" layer="22" font="vector" ratio="15" rot="MR0">STM32F401 only
+4.7uF &lt;1ohm ESR</text>
+<wire x1="19.304" y1="19.812" x2="23.622" y2="19.812" width="0.2032" layer="22"/>
+<wire x1="23.622" y1="19.812" x2="23.622" y2="17.78" width="0.2032" layer="22"/>
+<wire x1="23.622" y1="17.78" x2="25.908" y2="17.78" width="0.2032" layer="22"/>
+<wire x1="25.908" y1="17.78" x2="25.908" y2="16.51" width="0.2032" layer="22"/>
+<wire x1="25.908" y1="16.51" x2="21.59" y2="16.51" width="0.2032" layer="22"/>
+<wire x1="21.59" y1="16.51" x2="21.59" y2="18.288" width="0.2032" layer="22"/>
+<wire x1="21.59" y1="18.288" x2="19.812" y2="18.288" width="0.2032" layer="22"/>
+<wire x1="19.812" y1="18.288" x2="19.812" y2="18.542" width="0.2032" layer="22"/>
+<wire x1="19.812" y1="18.542" x2="19.304" y2="19.05" width="0.2032" layer="22"/>
+<wire x1="19.304" y1="19.05" x2="19.304" y2="19.812" width="0.2032" layer="22"/>
+<text x="25.654" y="16.764" size="0.3048" layer="22" font="vector" ratio="15" rot="MR0">For STM32F401
+0-ohm res</text>
 </plain>
 <libraries>
 <library name="SparkFun-DigitalIC">
@@ -951,8 +969,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="-2" library="SparkFun-DigitalIC" package="TQFP64" value="STM32F405RG" x="24.1608125" y="13.28239375" smashed="yes" rot="R90">
 <attribute name="VALUE" x="27.1608125" y="10.28239375" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="C5" library="SparkFun-Capacitors" package="0603-CAP" value="2.2uF" x="22.098" y="19.05" rot="MR180">
-<attribute name="PROD_ID" value="CAP-07888" x="53.848" y="64.77" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="C5" library="SparkFun-Capacitors" package="0603-CAP" value="2.2uF" x="21.336" y="19.05" rot="MR180">
+<attribute name="PROD_ID" value="CAP-07888" x="53.086" y="64.77" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C15" library="SparkFun-Capacitors" package="0603-CAP" value="2.2uF" x="17.78" y="10.16" smashed="yes" rot="MR0">
 <attribute name="PROD_ID" value="CAP-07888" x="-17.78" y="-35.56" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1116,8 +1134,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="12.954" y="18.923" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.049" y="20.066" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="C17" library="SparkFun-Capacitors" package="0603-CAP" value="4.7uF" x="-24.892" y="-11.684">
-<attribute name="PROD_ID" value="CAP-08280" x="-24.892" y="-11.684" size="1.778" layer="27" ratio="15" display="off"/>
+<element name="C17" library="SparkFun-Capacitors" package="0603-CAP" value="4.7uF" x="24.13" y="23.876" rot="MR0">
+<attribute name="PROD_ID" value="CAP-08280" x="24.13" y="23.876" size="1.778" layer="28" ratio="15" rot="MR0" display="off"/>
 </element>
 </elements>
 <signals>
@@ -1254,6 +1272,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.772" y1="19.812" x2="13.462" y2="19.812" width="0.4064" layer="16"/>
 <wire x1="12.192" y1="24.384" x2="13.462" y2="23.114" width="0.2032" layer="1"/>
 <wire x1="13.462" y1="23.114" x2="13.462" y2="19.812" width="0.2032" layer="1"/>
+<contactref element="S2" pad="2"/>
 </signal>
 <signal name="GND">
 <contactref element="-2" pad="63"/>
@@ -1378,7 +1397,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="C12" pad="2"/>
 <contactref element="C17" pad="2"/>
-<wire x1="1.155" y1="1.639" x2="-24.042" y2="-11.684" width="0" layer="19" extent="1-1"/>
+<contactref element="S1" pad="2"/>
 </signal>
 <signal name="N$10">
 <contactref element="-2" pad="47"/>
@@ -1416,6 +1435,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="42.396" y1="8.912" x2="42.334" y2="8.974" width="0.2032" layer="1"/>
 <wire x1="41.822" y1="8.978" x2="42.33" y2="8.978" width="0.254" layer="1"/>
 <wire x1="42.33" y1="8.978" x2="42.334" y2="8.974" width="0.254" layer="1"/>
+<contactref element="S1" pad="3"/>
 </signal>
 <signal name="USB_DP">
 <contactref element="-2" pad="45"/>
@@ -1472,9 +1492,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.9108125" y1="19.03239375" x2="20.9108125" y2="20.1488125" width="0.2032" layer="1"/>
 <wire x1="20.9108125" y1="20.1488125" x2="20.574" y2="20.32" width="0.2032" layer="1"/>
 <via x="20.574" y="20.32" extent="1-16" drill="0.4064"/>
-<wire x1="21.082" y1="19.216" x2="21.248" y2="19.05" width="0.2032" layer="16"/>
-<wire x1="21.082" y1="19.216" x2="21.082" y2="19.812" width="0.2032" layer="16"/>
-<wire x1="21.082" y1="19.812" x2="20.574" y2="20.32" width="0.2032" layer="16"/>
+<wire x1="20.574" y1="19.216" x2="20.486" y2="19.05" width="0.2032" layer="16"/>
+<wire x1="20.574" y1="19.216" x2="20.574" y2="20.32" width="0.2032" layer="16"/>
 </signal>
 <signal name="P17">
 <contactref element="-2" pad="17"/>
@@ -1532,6 +1551,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="35.902" y1="20.408" x2="36.068" y2="20.574" width="0.254" layer="16"/>
 <wire x1="44.788" y1="20.342" x2="36.3" y2="20.342" width="0.2032" layer="1"/>
 <wire x1="36.3" y1="20.342" x2="36.068" y2="20.574" width="0.2032" layer="1"/>
+<contactref element="S2" pad="3"/>
 </signal>
 <signal name="5V">
 <contactref element="U1" pad="1"/>
@@ -1797,7 +1817,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="21.4108125" y1="19.03239375" x2="21.4108125" y2="21.5151875" width="0.2032" layer="1"/>
 <wire x1="21.4108125" y1="21.5151875" x2="22.352" y2="22.352" width="0.2032" layer="1"/>
 <via x="22.352" y="22.352" extent="1-16" drill="0.4064"/>
-<wire x1="22.352" y1="22.352" x2="30.48" y2="22.352" width="0.2032" layer="16"/>
+<wire x1="22.352" y1="22.352" x2="24.892" y2="22.352" width="0.2032" layer="16"/>
+<wire x1="24.892" y1="22.352" x2="30.48" y2="22.352" width="0.2032" layer="16"/>
 <wire x1="30.48" y1="22.352" x2="32.512" y2="24.384" width="0.2032" layer="16"/>
 <contactref element="R5" pad="1"/>
 <wire x1="32.512" y1="24.384" x2="33.782" y2="23.114" width="0.2032" layer="1"/>
@@ -1809,7 +1830,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="36.83" y1="21.59" x2="38.012" y2="21.59" width="0.2032" layer="16"/>
 <contactref element="JP3" pad="1"/>
 <contactref element="C17" pad="1"/>
-<wire x1="-25.742" y1="-11.684" x2="21.4108125" y2="19.03239375" width="0" layer="19" extent="1-1"/>
+<wire x1="24.98" y1="23.876" x2="24.98" y2="22.44" width="0.2032" layer="16"/>
+<wire x1="24.98" y1="22.44" x2="24.892" y2="22.352" width="0.2032" layer="16"/>
 </signal>
 <signal name="RF_CE">
 <contactref element="-3" pad="3"/>
