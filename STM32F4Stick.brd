@@ -23,7 +23,7 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -139,8 +139,8 @@
 <text x="8.636" y="2.794" size="0.8128" layer="21" ratio="15">GND</text>
 <text x="4.318" y="23.368" size="0.8128" layer="21" ratio="15" rot="R90">GND</text>
 <text x="6.096" y="2.794" size="0.8128" layer="21" ratio="15">3V3</text>
-<text x="11.176" y="4.318" size="0.4064" layer="21" ratio="15">SWDIO</text>
-<text x="13.716" y="4.318" size="0.4064" layer="21" ratio="15">SWCLK</text>
+<text x="11.176" y="4.318" size="0.4064" layer="21">SWDIO</text>
+<text x="13.716" y="4.318" size="0.4064" layer="21">SWCLK</text>
 <text x="16.256" y="2.794" size="0.8128" layer="21" ratio="15">A15</text>
 <text x="18.796" y="3.048" size="0.8128" layer="21" ratio="15">C10</text>
 <text x="21.336" y="2.794" size="0.8128" layer="21" ratio="15">C11</text>
@@ -178,13 +178,13 @@
 <wire x1="46.482" y1="25.654" x2="46.482" y2="21.082" width="0.2032" layer="21"/>
 <wire x1="46.482" y1="21.082" x2="41.402" y2="21.082" width="0.2032" layer="21"/>
 <wire x1="41.402" y1="21.082" x2="41.402" y2="25.654" width="0.2032" layer="21"/>
-<text x="41.91" y="21.336" size="0.4064" layer="21" ratio="15">RX UART2 TX</text>
-<text x="25.146" y="4.826" size="0.6096" layer="21" ratio="15">BOOT0</text>
+<text x="41.91" y="21.336" size="0.4064" layer="21">RX UART2 TX</text>
+<text x="25.146" y="4.826" size="0.6096" layer="21" ratio="10">BOOT0</text>
 <text x="46.228" y="5.334" size="0.8128" layer="21" ratio="15" rot="R90">RESET</text>
 <text x="46.228" y="17.526" size="0.8128" layer="21" ratio="15" rot="R90">BTN</text>
-<text x="41.656" y="16.764" size="0.4064" layer="21" ratio="15" rot="R90">BOOT1/PB2</text>
-<text x="46.228" y="14.224" size="0.4064" layer="21" ratio="15" rot="R90">LED2</text>
-<text x="46.228" y="12.446" size="0.4064" layer="21" ratio="15" rot="R90">LED1</text>
+<text x="41.656" y="16.764" size="0.4064" layer="21" rot="R90">BOOT1/PB2</text>
+<text x="46.228" y="14.224" size="0.4064" layer="21" rot="R90">LED2</text>
+<text x="46.228" y="12.446" size="0.4064" layer="21" rot="R90">LED1</text>
 <text x="42.418" y="12.192" size="0.3048" layer="21" ratio="15">PA0</text>
 <text x="42.418" y="15.494" size="0.3048" layer="21" ratio="15">PA1</text>
 <text x="0.508" y="3.81" size="0.8128" layer="21" ratio="15">POWER </text>
@@ -192,46 +192,47 @@
 <wire x1="36.322" y1="21.082" x2="31.242" y2="21.082" width="0.2032" layer="21"/>
 <wire x1="31.242" y1="21.082" x2="31.242" y2="25.654" width="0.2032" layer="21"/>
 <wire x1="31.242" y1="25.654" x2="36.322" y2="25.654" width="0.2032" layer="21"/>
-<text x="31.496" y="21.336" size="0.4064" layer="21" ratio="15">SDA I2C2 SCL</text>
+<text x="31.496" y="21.336" size="0.4064" layer="21">SDA I2C2 SCL</text>
 <wire x1="31.496" y1="23.114" x2="33.274" y2="23.114" width="0.2032" layer="21"/>
 <wire x1="34.29" y1="3.81" x2="36.068" y2="3.81" width="0.2032" layer="21"/>
 <wire x1="21.336" y1="3.81" x2="23.114" y2="3.81" width="0.2032" layer="21"/>
 <text x="11.176" y="5.588" size="0.6096" layer="21" ratio="15">SWD</text>
 <text x="13.716" y="3.048" size="0.8128" layer="21" ratio="15">A14</text>
 <text x="11.43" y="2.794" size="0.8128" layer="21" ratio="15">A13</text>
-<text x="11.176" y="4.826" size="0.4064" layer="21" ratio="15">JTMS</text>
-<text x="13.716" y="4.826" size="0.4064" layer="21" ratio="15">JTCK</text>
+<text x="11.176" y="4.826" size="0.4064" layer="21">JTMS</text>
+<text x="13.716" y="4.826" size="0.4064" layer="21">JTCK</text>
 <text x="16.51" y="4.064" size="0.4064" layer="21" ratio="15">JTDI</text>
-<text x="29.464" y="4.064" size="0.4064" layer="21" ratio="15">JTD0</text>
-<text x="31.496" y="4.064" size="0.4064" layer="21" ratio="15">NJTRST</text>
+<text x="29.464" y="4.064" size="0.4064" layer="21">JTD0</text>
+<text x="31.496" y="4.064" size="0.4064" layer="21">NJTRST</text>
 <text x="33.274" y="6.858" size="0.8128" layer="21" ratio="15">STM32F4Stick</text>
 <text x="33.274" y="5.842" size="0.6096" layer="21" ratio="15">FURKAN CAYCI</text>
-<text x="33.274" y="5.08" size="0.4064" layer="21" ratio="15">JUNE 2014</text>
-<text x="37.592" y="5.08" size="0.4064" layer="21" ratio="15">V2 REV B</text>
+<text x="33.274" y="5.08" size="0.4064" layer="21">JUNE 2014</text>
+<text x="37.592" y="5.08" size="0.4064" layer="21">V2 REV B</text>
 <wire x1="12.446" y1="9.652" x2="17.526" y2="9.652" width="0.2032" layer="21"/>
 <wire x1="17.526" y1="9.652" x2="17.526" y2="7.112" width="0.2032" layer="21"/>
 <wire x1="17.526" y1="7.112" x2="12.446" y2="7.112" width="0.2032" layer="21"/>
 <wire x1="12.446" y1="7.112" x2="12.446" y2="9.652" width="0.2032" layer="21"/>
-<text x="12.954" y="7.62" size="0.4064" layer="21" ratio="15">SD/MMC CARD 
+<text x="12.954" y="7.62" size="0.4064" layer="21">SD/MMC CARD 
 (SPI MODE)
 SPI1 A4,5,6,7</text>
-<text x="22.86" y="20.066" size="0.4064" layer="21" ratio="15">https://github.com/fcayci/STM32F4Stick</text>
-<text x="23.622" y="12.192" size="0.4064" layer="22" font="vector" ratio="15" rot="MR0">USB ID
+<text x="22.606" y="20.574" size="0.6096" layer="21">github.com/fcayci
+/STM32F4Stick</text>
+<text x="23.622" y="12.192" size="0.4064" layer="22" font="vector" rot="MR0">USB ID
 Pull high</text>
 <wire x1="20.32" y1="12.446" x2="20.32" y2="13.716" width="0.2032" layer="22"/>
 <wire x1="20.32" y1="13.716" x2="24.13" y2="13.716" width="0.2032" layer="22"/>
 <wire x1="24.13" y1="13.716" x2="24.13" y2="10.16" width="0.2032" layer="22"/>
 <wire x1="24.13" y1="10.16" x2="22.098" y2="10.16" width="0.2032" layer="22"/>
-<text x="23.368" y="11.43" size="0.4064" layer="22" font="vector" ratio="15" rot="MR0">100k</text>
+<text x="23.368" y="11.43" size="0.4064" layer="22" font="vector" rot="MR0">100k</text>
 <wire x1="10.668" y1="14.478" x2="16.51" y2="14.478" width="0.2032" layer="21"/>
 <wire x1="16.51" y1="14.478" x2="16.51" y2="13.208" width="0.2032" layer="21"/>
 <wire x1="16.51" y1="13.208" x2="10.668" y2="13.208" width="0.2032" layer="21"/>
 <wire x1="10.668" y1="13.208" x2="10.668" y2="14.478" width="0.2032" layer="21"/>
-<text x="23.114" y="23.622" size="0.4064" layer="21" ratio="15">nRF24L01+ 2.4GHz
+<text x="23.114" y="23.622" size="0.4064" layer="21">nRF24L01+ 2.4GHz
 SPI2 PB12,13,14,15
 CE - PC6 (Face out)</text>
 <text x="10.922" y="20.32" size="0.4064" layer="21" ratio="15">1</text>
-<text x="11.176" y="13.716" size="0.4064" layer="21" ratio="15">USB Bootloader</text>
+<text x="11.176" y="13.716" size="0.4064" layer="21">USB Bootloader</text>
 <wire x1="20.574" y1="20.574" x2="21.082" y2="21.082" width="0.2032" layer="21"/>
 <wire x1="21.082" y1="21.082" x2="21.082" y2="23.114" width="0.2032" layer="21"/>
 <wire x1="21.082" y1="23.114" x2="30.226" y2="23.114" width="0.2032" layer="21"/>
@@ -244,7 +245,7 @@ CE - PC6 (Face out)</text>
 <wire x1="26.162" y1="0.254" x2="26.162" y2="4.572" width="0.2032" layer="21"/>
 <wire x1="16.002" y1="6.604" x2="26.162" y2="6.604" width="0.2032" layer="21"/>
 <wire x1="26.162" y1="6.604" x2="26.162" y2="5.588" width="0.2032" layer="21"/>
-<text x="16.51" y="5.842" size="0.4064" layer="21" ratio="15">CS    SCK SPI3 MISO  MOSI</text>
+<text x="16.51" y="5.842" size="0.4064" layer="21">CS    SCK SPI3 MISO  MOSI</text>
 <wire x1="28.448" y1="6.604" x2="29.972" y2="6.604" width="0.2032" layer="21"/>
 <wire x1="29.972" y1="4.572" x2="26.162" y2="4.572" width="0.2032" layer="21"/>
 <wire x1="26.162" y1="5.588" x2="28.194" y2="5.588" width="0.2032" layer="21"/>
@@ -255,8 +256,8 @@ CE - PC6 (Face out)</text>
 <wire x1="22.098" y1="25.146" x2="30.48" y2="25.146" width="0.2032" layer="22"/>
 <wire x1="30.48" y1="25.146" x2="30.48" y2="22.86" width="0.2032" layer="22"/>
 <wire x1="30.48" y1="22.86" x2="22.098" y2="22.86" width="0.2032" layer="22"/>
-<text x="29.972" y="23.368" size="0.3048" layer="22" font="vector" ratio="15" rot="MR0">STM32F401 only
-4.7uF &lt;1ohm ESR</text>
+<text x="29.972" y="23.368" size="0.3048" layer="22" font="vector" rot="MR0">STM32F401 only
+4.7uF</text>
 <wire x1="19.304" y1="19.812" x2="23.622" y2="19.812" width="0.2032" layer="22"/>
 <wire x1="23.622" y1="19.812" x2="23.622" y2="17.78" width="0.2032" layer="22"/>
 <wire x1="23.622" y1="17.78" x2="25.908" y2="17.78" width="0.2032" layer="22"/>
@@ -267,7 +268,7 @@ CE - PC6 (Face out)</text>
 <wire x1="19.812" y1="18.288" x2="19.812" y2="18.542" width="0.2032" layer="22"/>
 <wire x1="19.812" y1="18.542" x2="19.304" y2="19.05" width="0.2032" layer="22"/>
 <wire x1="19.304" y1="19.05" x2="19.304" y2="19.812" width="0.2032" layer="22"/>
-<text x="25.654" y="16.764" size="0.3048" layer="22" font="vector" ratio="15" rot="MR0">For STM32F401
+<text x="25.654" y="16.764" size="0.3048" layer="22" font="vector" rot="MR0">For STM32F401
 0-ohm res</text>
 </plain>
 <libraries>
