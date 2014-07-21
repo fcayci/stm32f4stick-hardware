@@ -1,11 +1,17 @@
-# STM32F4Stick - An STM32F405/STM32F401 based development board - Hardware
-This board is intended to be a small bread-board friendly development environment for STM32F4 series microcontrollers. There are different versions some of which are not tested. Please contact me if you see any problems or have any suggestions.
+### STM32F4Stick - An STM32F405/STM32F401 based development board - Hardware
+
+![Version 2 - Final](v2-board.png "Final")
 
 **There are two versions available with slight different mods. Checkout Ver1 or Ver2 branches for latest versions**
 
-### STM32F4Stick VERSIONS:
+This board is intended to be a small bread-board friendly development environment for STM32F4 series microcontrollers. There are different versions some of which are not tested. Please contact me if you see any problems or have any suggestions.
 
-#### VERSION 2:
+#### STM32F4Stick VERSIONS:
+
+##### VERSION 2:
+
+![Version 2 - Top Side](v2-board-top.png "Top Side")
+![Version 2 - Bottom Side](v2-board-bot.png "Bottom Side")
 
 * 1.84 x 1.02 inches board size
 * STM32F405RG ARM Microcontroller
@@ -20,7 +26,11 @@ This board is intended to be a small bread-board friendly development environmen
 * Optional pull-ups on pins A10, B5, B11, and C11 for reliable USB bootloader
 * Jump pads on BOOT0 pin, and push button on BOOT1 pin (Also act as a GPIO pin)
 
-#### VERSION 1:
+##### VERSION 1:
+
+![Version 1 - Top Side](v1-board-top.png "Top Side")
+![Version 1 - Bottom Side](v1-board-bot.png "Bottom Side")
+
 * 1.84 x 1.02 inches board size
 * STM32F405RG ARM Microcontroller
 * STM32F401 ARM Microcontroller compatibility
@@ -33,7 +43,7 @@ This board is intended to be a small bread-board friendly development environmen
 * Optional pull-up / pull-downs on pins A10, B5, B11, and C11 for reliable USB bootloader
 * Jump pads on BOOT0 pin, and push button on BOOT1 pin (Also act as a GPIO pin)
 
-### Possible Future Changes:
+#### Possible Future Changes:
 * FIX:
   * Locate and connect DAC pin(s) to the extension headers if they are not broken out already
 * NEW:
