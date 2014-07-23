@@ -8713,8 +8713,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 <device name="SMD-3" package="TACTILE_SWITCH_SMD-3">
 <connects>
-<connect gate="G$1" pin="1" pad="1 3"/>
-<connect gate="G$1" pin="2" pad="2 4"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
